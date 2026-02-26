@@ -1,2 +1,3 @@
 # naviotech-internship
-naviotech internship project
+naviotech internship project <br>
+Author - Jay Prakash Nag
