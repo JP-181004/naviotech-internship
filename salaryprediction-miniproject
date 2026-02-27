@@ -1,1 +1,29 @@
+import tensorflow as tf
+from tensorflow.keras import layers, models
+import os
+
+def load_data():
+    # Placeholder dataset generator
+    return None
+
+def build_model():
+    model=models.Sequential([
+        layers.Conv2D(32,(3,3),activation='relu',input_shape=(64,64,3)),
+        layers.MaxPooling2D(),
+        layers.Conv2D(64,(3,3),activation='relu'),
+        layers.MaxPooling2D(),
+        layers.Flatten(),
+        layers.Dense(128,activation='relu'),
+        layers.Dense(3,activation='softmax')
+    ])
+    model.compile(optimizer='adam',loss='categorical_crossentropy',metrics=['accuracy'])
+    return model
+
+def main():
+    print("Dataset placeholder. Add images to data/ folder.")
+    model=build_model()
+    print(model.summary())
+
+if __name__=="__main__":
+    main()
 
