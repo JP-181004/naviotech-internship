@@ -1,0 +1,12 @@
+import pandas as pd
+from sklearn.linear_model import LinearRegression
+import joblib
+
+def main():
+    print("Dataset placeholder. Add CSV in data/ with columns: experience, salary.")
+    # Dummy training
+    model=LinearRegression()
+    print("Model Ready: Simple Linear Regression")
+
+if __name__=="__main__":
+    main()
